@@ -1,0 +1,255 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  color: #333;
+  max-width: 550px;
+  position: relative;
+}
+
+a{
+  text-decoration: none;
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #333;
+  box-shadow: 0px 0px 15px gray;
+  margin: auto;
+}
+
+header {
+  background-color: #ff5722;
+  color: #fff;
+  border-bottom: 1px solid #33333360;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  padding: 15px;
+  width: 100%;
+  text-align: left;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.tabs {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 15px 0;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.tab {
+  padding: 10px;
+  font-size: 0.95rem;
+  color: #888;
+  cursor: pointer;
+  width: 50%;
+  text-align: center;
+  text-decoration: none;
+}
+
+.tab.active {
+  color: #ff5722;
+  border-bottom: 2px solid #ff5722;
+  font-weight: bold;
+}
+
+.notes-list {
+  padding: 15px;
+  width: 100%;
+  text-align: right;
+  cursor: pointer;
+}
+
+
+.note-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  padding: 15px;
+  margin-bottom: 15px;
+  text-align: right;
+}
+.note-card:hover{
+  background-color: #e9e7e7; 
+}
+
+.note-card a, 
+.note-card a:visited {
+  color: #000;
+  direction: rtl;
+}
+
+.note-card .note-title {
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+
+.note-card .note-desc {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.note-card .note-date {
+  font-size: 0.75rem;
+  color: #888;
+  margin-top:2rem;
+}
+
+/* الزر العائم */
+.fab {
+  position: fixed;
+  bottom: 25px;
+  left: calc(50% - 250px + 25px);
+  background-color: #ff5722;
+  color: white;
+  font-size: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+  cursor: pointer;
+  z-index: 200;
+}
+
+
+.top-bar {
+      background-color: white;
+      width: 100%;
+      padding: 10px 15px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .top-bar .title {
+      font-size: 18px;
+      font-weight: bold;
+      color: #e53935;
+    }
+
+     i {
+      margin-left: 10px;
+      padding: 7px;
+      border-radius: 50%;
+      cursor: pointer;
+      color: #e53935;
+    }
+
+    i:hover{
+      background-color: #eee;
+
+    }
+    .note-container {
+      max-width: 500px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 14px 10px;
+      text-align: right;
+      direction: rtl;
+
+    }
+
+    .note-container .note-category {
+      color: #e53935;
+      font-size: 14px;
+      margin-bottom: 10px;
+      text-decoration: underline;
+
+    }
+
+    .note-container .note-title {
+      font-size: 22px;
+      color: #888;
+      margin-bottom:0.8rem;
+      padding: 0.1rem;
+      border: none;
+      border-bottom: 0.1px solid #33333367;
+      width: 100%;
+      outline: none;
+      background: none;
+      text-align: right;
+    }
+
+    .note-container .note-content {
+      font-size: 18px;
+      color: #444;
+      min-height: 300px;
+      width: 100%;
+      border: none;
+      outline: none;
+      background: none;
+      resize: none;
+      text-align: right;
+
+    }
+
+    .note-container .note-footer {
+      margin-top: 20px;
+      color: #999;
+      font-size: 14px;
+    }
+
+    .groups{
+      width: 100%;
+      min-height: 100vh;
+      padding: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+      position: relative;
+    } 
+    .groups .group-item{
+      background-color: #ddd;
+      padding: 0.8rem;
+      margin-bottom: 0.2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      direction: rtl;
+      border-radius: 10px;
+      position: sticky;
+    }
+    .group-item span{
+      font-size: 16px;
+      font-weight: bold;
+    }
