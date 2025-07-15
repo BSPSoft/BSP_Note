@@ -73,7 +73,7 @@ yarn preview
 MIT License
 
 ## **المؤلف**
-- **اسمك هنا**
+- **BSP SOFT (Basheer Salh Al_Shamiry)**
 - [BSPSoft Company (github)](https://github.com/BSPSoft)
 ---
 

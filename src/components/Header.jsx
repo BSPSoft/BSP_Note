@@ -2,7 +2,7 @@
 function Header() {
   return (
     <header>
-        SAMSUNG NOTES
+        BSP NOTES
     </header>
   )
 }

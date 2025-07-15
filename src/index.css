@@ -133,7 +133,7 @@ header {
 .fab {
   position: fixed;
   bottom: 25px;
-  left: calc(50% - 250px + 25px);
+  left: calc(50% - 200px + 20px);
   background-color: #ff5722;
   color: white;
   font-size: 30px;
