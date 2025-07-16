@@ -5,7 +5,7 @@ import { Route, Routes, useNavigate } from 'react-router-dom';
 import Notes from './components/Notes';
 import Groups from './components/Groups';
 import Fab from './components/Fab';
-import Missing from '../../06tut/src/components/Missing';
+import Missing from './components/Missing';
 import AddNote from './components/AddNote';
 
 function App() {

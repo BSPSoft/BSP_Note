@@ -16,7 +16,7 @@
 أولا قم باستنساخ المشروع إلى جهازك:
 
 ```bash
-git clone https://github.com/BSPSoft/Note-App.git
+git clone https://github.com/BSPSoft/BSP_Note.git
 cd Note-App
 
 ثم ثبت التبعيات عبر:
